@@ -199,7 +199,7 @@ def big_shoe_rebounds
   game_hash.count do |team, team_stats|
     team_stats[:players].count do |pl|
       if pl[:shoe] > b_shoe
-        binding.pry
+    
         b_shoe = pl[:shoe]
         rb = pl[:rebounds]
       end
